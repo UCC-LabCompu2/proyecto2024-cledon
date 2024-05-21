@@ -20,4 +20,4 @@
 * HTML5
 * CSS3
 
-Link del Proyecto: https://ucc-labcompu2.github.io/proyecto2024-cledon/
+Link del Proyecto: [Tetris🕹️](https://ucc-labcompu2.github.io/proyecto2024-cledon/)
