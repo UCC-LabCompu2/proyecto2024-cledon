@@ -7,26 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Imágenes/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
     <h1>SETTINGS</h1>
 </header>
 <main>
-    <h3>
+    <div class="font3">
         <div class="volume-control">
             <label for="volume">Volume:</label>
             <input type="range" id="volume" name="volume" min="0" max="100" value="50" oninput="document.getElementById('volume-value').textContent = this.value" placeholder="Adjust volume" size="50" maxlength="3">
             <output id="volume-value">50</output>
         </div>
+        <div class="difficulty">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="professional">Professional</option>
+            </select>
+        </div>
         <div class="toggle-container">
             <input type="checkbox" id="toggle-button">
-            Music:
-            <label for="toggle-button" id="toggle-label"></label>
+            <label  for="toggle-button" id="toggle-label">Music:</label>
         </div>
-    </h3>
+    </div>
 </main>
 <footer>
     <div class="back">
