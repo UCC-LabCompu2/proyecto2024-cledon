@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+    <script defer src="settings.js"></script>
 </head>
 <body>
 <header>
@@ -18,7 +19,8 @@
     <div class="font3">
         <div class="volume-control">
             <label for="volume">Volume:</label>
-            <input type="range" id="volume" name="volume" min="0" max="100" value="50" oninput="document.getElementById('volume-value').textContent = this.value">
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50"
+                   oninput="document.getElementById('volume-value').textContent = this.value">
             <output id="volume-value">50</output>
         </div>
         <div class="difficulty">
@@ -32,7 +34,7 @@
         </div>
         <div class="toggle-container">
             <input type="checkbox" id="toggle-button">
-            <label  for="toggle-button" id="toggle-label">Music:</label>
+            <label for="toggle-button" id="toggle-label">Music:</label>
         </div>
     </div>
 </main>
