@@ -67,8 +67,8 @@ input[type="range"] {
 }
 
 #toggle-button:checked + #toggle-label::before {
-    content: "No";
-    color: #931717;
+    content: "Yes";
+    color: #369317;
     width: 30.5%;
     height: 61%;
     cursor: pointer;
@@ -76,51 +76,12 @@ input[type="range"] {
 }
 
 #toggle-button:not(:checked) + #toggle-label::before {
-    content: "Yes";
-    color: #30cc30;
+    content: "No";
+    color: #cc3042;
     width: 30.5%;
     height: 61%;
     cursor: pointer;
     position: absolute;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.square {
-    width: 10%;
-    height: 20.5%;
-    background-color: #000000;
-    border: 0.1em solid #ffffff;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    font-size: 2.5vw;
-}
-
-.square2 {
-    width: 10%;
-    height: 25.5%;
-    background-color: #000000;
-    border: 0.1em solid #ffffff;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    right: 60%;
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-}
-
-.rectangle {
-    width: 20%;
-    height: 61%;
-    background-color: #000000;
-    border: 0.2vw solid #ffffff;
 }
 
 .back {
@@ -190,4 +151,48 @@ input[type="range"] {
 
 .login-box button:hover {
     background-color: #000000;
+}
+canvas {
+background-color:black;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+    border: 0.01em solid #ffffff;
+    position: absolute;
+    top:20%;
+    right: 43%;
+}
+
+#score {
+    width: 12%;
+    height: 30.5%;
+    background-color: #000000;
+    border: 0.01em solid #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 57%;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+}
+
+#timer {
+    width: 10%;
+    height: 15.5%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    right: 58%;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+}
+
+#next-piece {
+    width: 12%;
+    height: 30.5%;
+    background-color: #000000;
+    border: 0.01em solid #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    font-size: 2.5vw;
 }
